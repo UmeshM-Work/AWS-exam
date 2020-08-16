@@ -1,0 +1,78 @@
+<!-- Create a Simple Form with Username and Password Field and perform following DOM Operations
+     a. Empty validation for all the fields. 
+     b. Read the value of the above fields and display it in the page, below the forms.
+      c. Clear the fields once the user submit
+the form. -->
+
+
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umesh Manjare</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="2.js"></script>
+</head>
+
+<body style="background-image: url(3.jpg);background-size: cover;">
+
+    <div class="container fluid" onclick="validation()">
+
+
+        <!-- row1 -->
+
+        <div class="row justify-content-center mt-5 rounded" style="height: 50vh;">
+            <div class="col-5 bg-dark " style=" box-shadow: 0px 0px 3px 3px white;">
+                <div class="login mt-4 d-flex justify-content-center text-light" style="border:solid;">LOGIN</div>
+
+                <div class=" mt-2 text-light"><label for="Username">Username</label> <span id="invalid" style="color: red; visibility: hidden;">Invalid</span><span id="valid" style="color: green; visibility: hidden;">valid</span></div>
+                <div><input id="inp1" class="form-control" type="text" placeholder="username"></div>
+
+
+
+                <div class="mt-2 text-light"><label for="password">Password </label> <span id="invalid1" style="color: red; visibility: hidden;">Invalid</span><span id="valid1" style="color: green; visibility: hidden;">valid</span></div>
+                <div><input id="inp2" class="form-control" type="text" placeholder="password"></div>
+
+
+                <div class="mt-3 text-light"><button onclick="submit()" class="btn btn-block btn-outline-danger " type="submit">submit</button></div>
+
+
+            </div>
+
+        </div>
+        <div class="row justify-content-center mt-3 rounded " style="height: 40vh; margin-bottom: 30vh;">
+            <div class="col-5 bg-dark text-light" style=" box-shadow: 0px 0px 3px 3px white; border-radius: 10px;">
+
+
+                <div id="detailbox" class="detailbox mt-3" style="box-shadow: 3px 3px 3px 3px black;">
+
+                    <div id="Detailparent" class="Rdetail">
+
+                        <div id=" detail " class="detail bg-dark d-flex justify-content-center " style="border: solid;">PERSONS DETAILS</div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
